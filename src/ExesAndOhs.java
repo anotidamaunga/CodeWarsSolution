@@ -9,15 +9,17 @@ public class ExesAndOhs {
     public static boolean getXO (String str) {
         int iCounter = 0;
         int yCounter = 0;
+        //go through the string checking whether the char at each index is an 'o' or not
         for(int i = 0; i<str.length();i++){
             if(str.charAt(i) == 'o' || str.charAt(i) == 'O'){
-                iCounter++;
+                iCounter++;//if the character is an 'o' then increment the iCounter
             }
         }
 
+        //go through the string checking whether the char at each index is an x or not
         for(int y = 0; y<str.length(); y++){
             if(str.charAt(y) == 'x' || str.charAt(y) == 'X'){
-                yCounter++;
+                yCounter++;//increment yCounter
             }
         }
 
